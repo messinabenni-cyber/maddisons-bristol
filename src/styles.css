@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    background-color: #0a1220;
+    color: #f8f5ef;
+  }
+  ::selection {
+    background-color: #ff5b1f;
+    color: #0a1220;
+  }
+}
+
+@layer components {
+  .eyebrow {
+    @apply text-xs sm:text-sm tracking-wider2 uppercase font-semibold text-accent-500;
+  }
+  .h-display {
+    @apply font-display font-extrabold uppercase tracking-tight leading-tight;
+  }
+  .btn-primary {
+    @apply inline-flex items-center justify-center bg-accent-500 hover:bg-accent-600 text-ink-950 font-display font-bold uppercase tracking-wider2 px-6 py-3 rounded-sm transition-colors;
+  }
+  .btn-ghost {
+    @apply inline-flex items-center justify-center border border-cream-50/30 hover:border-cream-50 text-cream-50 font-display font-bold uppercase tracking-wider2 px-6 py-3 rounded-sm transition-colors;
+  }
+  .card {
+    @apply bg-ink-900 border border-cream-50/10 rounded-sm p-6 sm:p-8;
+  }
+  .container-prose {
+    @apply mx-auto px-5 sm:px-8 max-w-6xl;
+  }
+}
