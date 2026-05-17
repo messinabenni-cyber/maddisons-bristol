@@ -1,4 +1,20 @@
+# Maddisons Vehicle Body Repair — robots.txt
 User-agent: *
 Allow: /
+Disallow: /api/
 
-Sitemap: https://www.maddisonsbristol.co.uk/sitemap.xml
+# Block well-known generative scrapers (flip to Allow once content is ready to be cited).
+User-agent: GPTBot
+Disallow: /
+User-agent: CCBot
+Disallow: /
+User-agent: anthropic-ai
+Disallow: /
+User-agent: ClaudeBot
+Disallow: /
+User-agent: Google-Extended
+Disallow: /
+User-agent: PerplexityBot
+Disallow: /
+
+Sitemap: https://maddisons-bristol.vercel.app/sitemap.xml
